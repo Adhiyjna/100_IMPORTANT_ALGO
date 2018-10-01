@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    char n[100];
+
+int i,j;
+    cout<<"enter string";
+    cin>>n;
+
+    int len=strlen(n);
+
+int cnt=0;
+     for(int i=0;i<len-1;i++)
+     {
+         
+         for(int j=i+1;j<len;j++)
+         {
+             if(n[i]==n[j]&&cnt!=1)
+             {
+                 cnt++;
+                cout<<n[j];
+              }
+         }
+
+     }
+
+}
