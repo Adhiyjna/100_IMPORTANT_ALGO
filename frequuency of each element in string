@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char n[100];
+    int i;
+    int count[26]={0};
+    
+
+
+    cout<<"enter string";
+    cin>>n;
+   
+
+    int len=strlen(n);
+
+    for(i=0;i<len;i++)
+    {
+        count[n[i]-'a']++;
+    }
+
+   for(i=0;i<len;i++){
+    cout<<n[i]<<""<<count[n[i]-'a']<<endl;
+     }
+}
+
+
