@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int i,n,x;
+    cout<<"enter the no of elements";
+    cin>>n;
+    int a[n];
+    int dup[100];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"enter ur value";
+    cin>>x;
+
+int k=0;
+    for(i=0;i<n;i++)
+    {
+        if(x>a[i])
+        {
+            dup[k++]=a[i];
+        }
+    }
+int maxm=0;
+   for(i=0;i<k;i++)
+   {
+       if(maxm<dup[i])
+            maxm=dup[i];
+   }
+   cout<<maxm;
+
+
+
+}
