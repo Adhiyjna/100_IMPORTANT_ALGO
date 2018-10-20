@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+int  main()
+ {
+   int c[100],i,m,n;
+   cin>>m;
+   int a[m];
+   cout<<"Enter Elements in 1st Array: ";
+   for(i=0;i<m;i++)
+   {
+   cin>>a[i];
+   }
+   cin>>n;
+   int b[n];
+   cout<<"Enter Elements in 2nd Array: ";
+   for(i=0;i<n;i++)
+   {
+   cin>>b[i];
+   }
+
+   for(i=0;i<m;i++)
+   {
+    c[i]=a[i];
+   }
+   for(i=0;i<n;i++)
+   {
+    c[i+m]=b[i];
+   }
+   for(i=0;i<(m+n);i++)
+   {
+   cout<<c[i];
+   }
+
+ }
